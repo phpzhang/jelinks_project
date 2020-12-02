@@ -1,0 +1,11 @@
+test_send_message:
+  test_message001:
+    phone: "18888888888"
+    content: "hello"
+
+
+
+
+
+
+
