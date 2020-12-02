@@ -24,10 +24,10 @@ class TestMessage:
 #         self.driver.quit()
 
     # [("18888888888", "hello"), ("13333333333", "abc")]
-    @pytest.mark.parametrize("args", analyze_file("message_data.yaml","test_send_message"))
+#     @pytest.mark.parametrize("args", analyze_file("message_data.yaml","test_send_message"))
     @allure.step(title="测试用例01")
     @allure.severity("critical")
-    def test_send_message(self, args):
+    def test_send_message(self):
         assert 1 == 1
 #         allure.attach('hello', 'hello', allure.attachment_type.TEXT)
 #         phone = args["phone"]
