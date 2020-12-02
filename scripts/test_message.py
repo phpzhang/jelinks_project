@@ -13,15 +13,15 @@ from page.page import Page
 class TestMessage:
 
     def setup(self):
-        self.driver = init_driver()
-        print(self.driver)
-        self.page = Page(self.driver)
-        # pass
+#         self.driver = init_driver()
+#         print(self.driver)
+#         self.page = Page(self.driver)
+        pass
 
     def teardown(self):
-        # pass
-        time.sleep(3)
-        self.driver.quit()
+        pass
+#         time.sleep(3)
+#         self.driver.quit()
 
     # [("18888888888", "hello"), ("13333333333", "abc")]
     @pytest.mark.parametrize("args", analyze_file("message_data.yaml","test_send_message"))
